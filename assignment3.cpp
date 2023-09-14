@@ -39,5 +39,9 @@ int main() {
 
     cout << "sum: " << sum(v) << endl;
     cout << "product: " << product(v) << endl;
+    vector<int> rev = reverse(v);
+    for (int i = 0; i < rev.size(); i++) {
+        cout << rev[i] << " ";
+    }
 }
 
