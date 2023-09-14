@@ -10,3 +10,11 @@ int sum(vector<int> v) {
     return sum;
 }
 
+int product(vector<int> v) {
+    int product = v[0];
+    for (int i = 1; i < v.size(); i++) {
+        product*=v[i];
+    }
+    return product;
+}
+
