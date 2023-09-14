@@ -18,3 +18,18 @@ int product(vector<int> v) {
     return product;
 }
 
+int main() {
+    vector<int> v;
+    int input;
+
+    cout << "enter numbers (-1 to stop):" << endl;
+    cin >> input;
+    while (input != -1) {
+        v.push_back(input);
+        cin >> input;
+    }
+
+    cout << "sum: " << sum(v) << endl;
+    cout << "product: " << product(v) << endl;
+}
+
