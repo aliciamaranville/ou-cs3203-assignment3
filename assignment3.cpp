@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int sum(vector<int> v) {
+int sum(vector<int> v) { // calculates sum of all numbers in vector
     int sum = 0;
     for (int i = 0; i < v.size(); i++) {
         sum+=v[i];
@@ -10,7 +10,7 @@ int sum(vector<int> v) {
     return sum;
 }
 
-int product(vector<int> v) {
+int product(vector<int> v) { // calculates product of all numbers in vector
     int product = v[0];
     for (int i = 1; i < v.size(); i++) {
         product*=v[i];
@@ -33,7 +33,7 @@ int main() {
     cout << "enter numbers (-1 to stop):" << endl;
     cin >> input;
     while (input != -1) {
-        v.push_back(input);
+        v.push_back(input); // puts user inputted numbers into vector
         cin >> input;
     }
 
@@ -43,5 +43,7 @@ int main() {
     for (int i = 0; i < rev.size(); i++) {
         cout << rev[i] << " ";
     }
+    cout << "sum: " << sum(v) << endl; // calculate and print sum
+    cout << "product: " << product(v) << endl; // calculate and print product
 }
 
