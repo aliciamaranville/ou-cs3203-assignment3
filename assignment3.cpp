@@ -18,6 +18,14 @@ int product(vector<int> v) {
     return product;
 }
 
+vector<int> reverse(vector<int> v) {
+    vector<int> reverse;
+    for (int i = v.size()-1; i >= 0; i--){
+        reverse.push_back(v[i]);
+    }
+    return reverse;
+}
+
 int main() {
     vector<int> v;
     int input;
